@@ -3,11 +3,1516 @@
     "current": {
       "nodeId": "Purok 10 River",
       "waterLevel": 0.6,
-      "timestamp": "2026-01-28T19:35:43.242Z",
+      "timestamp": "2026-01-28T19:47:05.836Z",
       "alertStatus": "normal",
       "confirmedAlert": false
     },
     "history": [
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:47:05.836Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:47:02.707Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:59.353Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:46:56.212Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:53.063Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:49.909Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:46.721Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:46:43.560Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:40.307Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:46:37.105Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:33.944Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:30.775Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:27.625Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:46:24.492Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:21.308Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:18.162Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:46:14.919Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:11.773Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:46:08.642Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:05.467Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:46:02.219Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:59.082Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:55.910Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:52.769Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:49.599Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:46.419Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:43.263Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:40.127Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:36.976Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:33.826Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:30.563Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:27.421Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:24.267Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:21.125Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:17.936Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:14.796Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:11.652Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:08.498Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:05.356Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:45:02.081Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:58.906Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:55.668Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:52.517Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:49.382Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:46.137Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:42.995Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:39.831Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:36.684Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:33.505Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:30.367Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:27.226Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:24.088Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:20.873Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:17.728Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:14.565Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:11.289Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:44:08.037Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:04.902Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:44:01.766Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:58.589Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:55.433Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:52.302Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:49.066Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:45.892Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:43:42.719Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:39.512Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:43:36.373Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:43:33.170Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:43:30.020Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:26.796Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:23.652Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:20.498Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:17.289Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:14.148Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:43:10.974Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:07.799Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:43:04.599Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:43:01.450Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:42:58.310Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:55.168Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:52.016Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:42:48.826Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:45.681Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:42.507Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:42:39.212Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:36.055Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:32.863Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:42:29.713Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:26.547Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:23.402Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:20.265Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:17.081Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:13.937Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:10.763Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:07.588Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:04.413Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:42:01.239Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:58.030Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:54.890Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:51.577Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:48.439Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:45.181Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:41:42.045Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:41:38.814Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:41:35.663Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:32.531Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:29.393Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:26.169Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:23.026Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:19.880Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:16.702Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:13.559Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:41:10.392Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:07.236Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:04.102Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:41:00.945Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:40:57.796Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:40:54.655Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:51.507Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:48.330Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:45.084Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:41.948Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:38.809Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:35.571Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:40:32.417Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:29.265Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:26.112Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:22.916Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:19.764Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:40:16.589Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:40:13.312Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:40:10.036Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:06.854Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:03.687Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:40:00.410Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:57.215Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:54.062Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:39:50.884Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:39:47.619Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:44.435Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:41.262Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:38.087Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:34.879Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:39:31.738Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:39:28.563Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:25.349Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:22.214Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:18.992Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:39:15.806Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:12.669Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:09.516Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:39:06.344Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:39:03.127Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:38:59.981Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:56.839Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:53.703Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:38:50.569Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:47.318Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:44.151Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:38:41.011Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:37.878Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:34.746Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:38:31.600Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:28.451Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:25.095Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:38:21.949Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:18.805Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:15.651Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:12.476Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:09.285Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:06.150Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:38:03.011Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:59.881Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:56.707Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:53.522Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:50.392Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:37:47.257Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:44.116Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:40.901Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:37.762Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:34.592Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:31.390Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:28.245Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:25.072Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:21.857Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:18.717Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:15.543Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:12.368Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:09.199Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:06.060Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:37:02.909Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:36:59.775Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:56.609Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:53.472Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:36:50.253Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:47.078Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:43.883Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:40.694Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:36:37.555Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:34.380Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:31.204Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:28.032Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:24.710Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:21.573Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:18.407Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:15.185Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:11.993Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:08.844Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:05.708Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:36:02.456Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:35:59.313Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.59,
+        "timestamp": "2026-01-28T19:35:55.980Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:35:52.752Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:35:49.606Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
+      {
+        "nodeId": "Purok 10 River",
+        "waterLevel": 0.6,
+        "timestamp": "2026-01-28T19:35:46.457Z",
+        "alertStatus": "normal",
+        "confirmedAlert": false
+      },
       {
         "nodeId": "Purok 10 River",
         "waterLevel": 0.6,
@@ -2702,1513 +4207,8 @@
         "timestamp": "2026-01-28T19:25:33.038Z",
         "alertStatus": "normal",
         "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:31.949Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:30.724Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:29.552Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:28.453Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:27.342Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:25:26.214Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:25.098Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:23.996Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:25:22.890Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.61,
-        "timestamp": "2026-01-28T19:25:21.782Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.58,
-        "timestamp": "2026-01-28T19:25:20.675Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.81,
-        "timestamp": "2026-01-28T19:25:18.544Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.81,
-        "timestamp": "2026-01-28T19:25:17.450Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.99,
-        "timestamp": "2026-01-28T19:25:16.355Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.98,
-        "timestamp": "2026-01-28T19:25:15.258Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.99,
-        "timestamp": "2026-01-28T19:25:14.029Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.99,
-        "timestamp": "2026-01-28T19:25:12.813Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.98,
-        "timestamp": "2026-01-28T19:25:11.717Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.06,
-        "timestamp": "2026-01-28T19:25:10.623Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.99,
-        "timestamp": "2026-01-28T19:25:09.513Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.97,
-        "timestamp": "2026-01-28T19:25:08.417Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.76,
-        "timestamp": "2026-01-28T19:25:07.319Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.97,
-        "timestamp": "2026-01-28T19:25:06.226Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.85,
-        "timestamp": "2026-01-28T19:25:05.120Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.07,
-        "timestamp": "2026-01-28T19:25:03.994Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.08,
-        "timestamp": "2026-01-28T19:25:02.868Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.12,
-        "timestamp": "2026-01-28T19:25:01.740Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.12,
-        "timestamp": "2026-01-28T19:25:00.575Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.13,
-        "timestamp": "2026-01-28T19:24:59.488Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.14,
-        "timestamp": "2026-01-28T19:24:58.351Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.14,
-        "timestamp": "2026-01-28T19:24:57.252Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.6,
-        "timestamp": "2026-01-28T19:24:52.157Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.97,
-        "timestamp": "2026-01-28T19:24:51.062Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.8,
-        "timestamp": "2026-01-28T19:24:49.965Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.23,
-        "timestamp": "2026-01-28T19:24:48.839Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.23,
-        "timestamp": "2026-01-28T19:24:47.713Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.16,
-        "timestamp": "2026-01-28T19:24:46.504Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.58,
-        "timestamp": "2026-01-28T19:24:41.408Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.79,
-        "timestamp": "2026-01-28T19:24:40.313Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:39.213Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:38.065Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:24:36.960Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:24:35.766Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:34.663Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:33.563Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:32.454Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:31.304Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:30.201Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:29.075Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:27.922Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:26.823Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:25.670Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:24.569Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:23.418Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:22.319Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:21.088Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:19.859Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:18.631Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:17.401Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:24:16.155Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:24:15.046Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:24:13.864Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.58,
-        "timestamp": "2026-01-28T19:24:08.747Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": -0.2,
-        "timestamp": "2026-01-28T19:24:05.584Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.76,
-        "timestamp": "2026-01-28T19:24:01.390Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.78,
-        "timestamp": "2026-01-28T19:24:00.097Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.78,
-        "timestamp": "2026-01-28T19:23:58.975Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.59,
-        "timestamp": "2026-01-28T19:23:53.832Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.73,
-        "timestamp": "2026-01-28T19:23:52.724Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:51.536Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:50.411Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:49.308Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:48.199Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:47.073Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.55,
-        "timestamp": "2026-01-28T19:23:45.965Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:44.747Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:43.614Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:42.468Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.55,
-        "timestamp": "2026-01-28T19:23:41.357Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:40.230Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:39.059Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:37.921Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:36.813Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:35.714Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:34.501Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:33.292Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:32.195Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:31.098Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:30.004Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:28.903Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:27.803Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:26.712Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:25.548Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:24.459Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:23.309Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:22.207Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:21.080Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:19.927Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:18.828Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:17.669Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:16.531Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:15.431Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:14.340Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:13.243Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:12.150Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:11.045Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:09.919Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:08.731Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:07.625Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:06.502Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:23:05.383Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:04.270Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:03.161Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:02.035Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:23:00.886Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:59.760Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:58.655Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:57.466Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:56.375Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:55.275Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.21,
-        "timestamp": "2026-01-28T19:22:54.149Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.13,
-        "timestamp": "2026-01-28T19:22:53.025Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:51.715Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.8,
-        "timestamp": "2026-01-28T19:22:46.590Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:45.491Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:44.391Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:43.297Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:42.195Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:41.092Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:39.991Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:22:38.874Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.64,
-        "timestamp": "2026-01-28T19:22:37.740Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.8,
-        "timestamp": "2026-01-28T19:22:36.639Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.8,
-        "timestamp": "2026-01-28T19:22:35.418Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.8,
-        "timestamp": "2026-01-28T19:22:34.284Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 1.58,
-        "timestamp": "2026-01-28T19:22:29.115Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:27.998Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.41,
-        "timestamp": "2026-01-28T19:22:26.885Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:22:25.785Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:24.557Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:23.430Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:22.229Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:21.079Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:19.922Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:18.821Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:17.620Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:22:16.519Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:22:15.418Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:14.316Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:12.984Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:11.858Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:22:10.630Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:09.503Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:22:08.377Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:07.190Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:06.094Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:04.998Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:03.843Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:02.744Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:01.618Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:22:00.464Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:59.366Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:58.192Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:57.095Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:55.986Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:54.860Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:53.702Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:52.607Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:51.480Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:50.353Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:49.199Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:48.101Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:46.897Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:45.806Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:44.721Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:43.542Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:42.445Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:41.342Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:40.216Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:39.078Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:37.965Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:36.787Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:35.685Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:34.585Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:33.390Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:32.299Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:31.204Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:30.050Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:28.952Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:27.802Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.61,
-        "timestamp": "2026-01-28T19:21:26.703Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:25.536Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:24.446Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:23.287Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:22.193Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:21.068Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:19.940Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:18.753Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:17.663Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:16.561Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:15.396Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:14.308Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:13.127Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:12.023Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:10.929Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:09.740Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:08.639Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:07.550Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:06.423Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:05.195Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:04.067Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.6,
-        "timestamp": "2026-01-28T19:21:02.969Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:01.875Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:21:00.783Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
-      },
-      {
-        "nodeId": "Purok 10 River",
-        "waterLevel": 0.59,
-        "timestamp": "2026-01-28T19:20:59.678Z",
-        "alertStatus": "normal",
-        "confirmedAlert": false
       }
     ],
-    "lastUpdate": "2026-01-28T19:35:43.242Z"
+    "lastUpdate": "2026-01-28T19:47:05.836Z"
   }
 }
