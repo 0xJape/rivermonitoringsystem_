@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { Badge } from '@/components/ui/badge'
 import { Map, MapMarker, MarkerContent, MarkerPopup } from '@/components/ui/map'
 import { supabase, NodeWithReading } from '@/lib/supabase'
@@ -10,6 +10,16 @@ interface LiveReading {
   nodeId: string
   waterLevel: number
   timestamp: string
+  alertStatus: string
+  confirmedAlert: boolean
+}
+
+interface LiveData {
+  [nodeId: string]: {
+    current: LiveReading
+    history: LiveReading[]
+    lastUpdate: string
+  }
 }
 
 export default function MapView() {
@@ -17,9 +27,7 @@ export default function MapView() {
   const [loading, setLoading] = useState(true)
   const [selectedNode, setSelectedNode] = useState<string | null>(null)
   const [lastUpdate, setLastUpdate] = useState(new Date())
-  const [liveData, setLiveData] = useState<LiveReading | null>(null)
-  const [wsConnected, setWsConnected] = useState(false)
-  const wsRef = useRef<WebSocket | null>(null)
+  const [liveConnected, setLiveConnected] = useState(false)
   const [recentUpdates, setRecentUpdates] = useState<Array<{
     nodeName: string
     change: number
@@ -30,25 +38,51 @@ export default function MapView() {
   useEffect(() => {
     fetchNodesWithReadings()
 
-    // Connect to WebSocket for live updates
-    const ws = new WebSocket('ws://localhost:3001')
-    wsRef.current = ws
+    // Poll for live data every 1 second for real-time updates
+    const pollInterval = setInterval(async () => {
+      try {
+        const response = await fetch('http://localhost:3001/api/esp32/live')
+        if (response.ok) {
+          const liveData: LiveData = await response.json()
+          setLiveConnected(true)
+          setLastUpdate(new Date())
+          
+          // Update nodes with live data
+          setNodes(prevNodes => prevNodes.map(node => {
+            const nodeData = liveData[node.name]
+            if (nodeData) {
+              const reading = nodeData.current
+              const status = getNodeStatus(reading.waterLevel, node.threshold)
+              return {
+                ...node,
+                latest_reading: {
+                  ...node.latest_reading,
+                  water_level: reading.waterLevel,
+                  timestamp: reading.timestamp
+                } as any,
+                status
+              }
+            }
+            return node
+          }))
+        } else {
+          setLiveConnected(false)
+        }
+      } catch (error) {
+        console.error('Error polling live data:', error)
+        setLiveConnected(false)
+      }
+    }, 1000) // Poll every 1 second
 
-    ws.onopen = () => {
-      console.log('🔌 Map connected to live feed')
-      setWsConnected(true)
-    }
-
-    ws.onmessage = (event) => {
-      const message = JSON.parse(event.data)
-      if (message.type === 'live_reading') {
-        const reading = message.data as LiveReading
-        setLiveData(reading)
-        setLastUpdate(new Date())
-        
-        // Update the node's water level in real-time
+    // Initial fetch
+    fetch('http://localhost:3001/api/esp32/live')
+      .then(res => res.json())
+      .then((liveData: LiveData) => {
+        setLiveConnected(true)
         setNodes(prevNodes => prevNodes.map(node => {
-          if (node.name === reading.nodeId) {
+          const nodeData = liveData[node.name]
+          if (nodeData) {
+            const reading = nodeData.current
             const status = getNodeStatus(reading.waterLevel, node.threshold)
             return {
               ...node,
@@ -62,11 +96,8 @@ export default function MapView() {
           }
           return node
         }))
-      }
-    }
-
-    ws.onerror = () => setWsConnected(false)
-    ws.onclose = () => setWsConnected(false)
+      })
+      .catch(() => setLiveConnected(false))
 
     // Also listen for database updates
     const channel = supabase
@@ -82,7 +113,7 @@ export default function MapView() {
       .subscribe()
 
     return () => {
-      ws.close()
+      clearInterval(pollInterval)
       supabase.removeChannel(channel)
     }
   }, [])
@@ -210,15 +241,15 @@ export default function MapView() {
         {/* Live Status Banner */}
         <div className={cn(
           "px-5 py-3 border-b",
-          wsConnected 
+          liveConnected 
             ? "bg-gradient-to-r from-emerald-500/10 to-cyan-500/10" 
             : "bg-gradient-to-r from-red-500/10 to-orange-500/10"
         )}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="relative">
-                <Radio className={cn("h-4 w-4", wsConnected ? "text-emerald-500" : "text-red-500")} />
-                {wsConnected && (
+                <Radio className={cn("h-4 w-4", liveConnected ? "text-emerald-500" : "text-red-500")} />
+                {liveConnected && (
                   <>
                     <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
                     <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-emerald-500"></span>
@@ -227,9 +258,9 @@ export default function MapView() {
               </div>
               <span className={cn(
                 "text-sm font-semibold",
-                wsConnected ? "text-emerald-600 dark:text-emerald-400" : "text-red-600 dark:text-red-400"
+                liveConnected ? "text-emerald-600 dark:text-emerald-400" : "text-red-600 dark:text-red-400"
               )}>
-                {wsConnected ? 'LIVE DATA' : 'DISCONNECTED'}
+                {liveConnected ? 'REAL-TIME (1s)' : 'DISCONNECTED'}
               </span>
             </div>
             <div className="flex items-center gap-2 text-xs text-muted-foreground">
@@ -237,11 +268,6 @@ export default function MapView() {
               <span>Updated {formatTimestamp(lastUpdate.toISOString())}</span>
             </div>
           </div>
-          {liveData && wsConnected && (
-            <div className="mt-2 text-sm font-medium">
-              📊 {liveData.nodeId}: <span className="text-primary">{liveData.waterLevel.toFixed(2)}m</span>
-            </div>
-          )}
         </div>
 
         {/* Stats Header */}

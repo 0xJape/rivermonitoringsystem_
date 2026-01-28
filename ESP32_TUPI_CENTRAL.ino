@@ -35,8 +35,8 @@ const int SIM800L_TX = 17;
 const String phoneNumber = "+639123456789"; // Your phone number
 
 // Alert thresholds (in meters)
-const float WARNING_LEVEL = 3.5;  // 70% of 5m threshold
-const float DANGER_LEVEL = 4.5;   // 90% of 5m threshold
+const float WARNING_LEVEL = 1.0;  // Warning at 1.0m
+const float DANGER_LEVEL = 1.5;   // Danger at 1.5m
 
 bool alertSent = false;
 
@@ -88,7 +88,7 @@ void loop() {
     Serial.println("Invalid reading");
   }
   
-  delay(1000); // Send every 1 second
+  delay(1000); // Send every 1 second for real-time data
 }
 
 float readDistance() {

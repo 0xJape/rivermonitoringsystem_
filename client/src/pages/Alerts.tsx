@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { supabase, NodeWithReading } from '@/lib/supabase'
@@ -10,59 +10,73 @@ interface LiveReading {
   nodeId: string
   waterLevel: number
   timestamp: string
+  alertStatus: string
+  confirmedAlert: boolean
+}
+
+interface LiveData {
+  [nodeId: string]: {
+    current: LiveReading
+    history: LiveReading[]
+    lastUpdate: string
+  }
 }
 
 export default function Alerts() {
   const [alertNodes, setAlertNodes] = useState<NodeWithReading[]>([])
   const [loading, setLoading] = useState(true)
-  const [wsConnected, setWsConnected] = useState(false)
+  const [liveConnected, setLiveConnected] = useState(false)
   const [lastUpdate, setLastUpdate] = useState(new Date())
-  const wsRef = useRef<WebSocket | null>(null)
 
   useEffect(() => {
     fetchAlertNodes()
 
-    // Connect to WebSocket for live updates
-    const ws = new WebSocket('ws://localhost:3001')
-    wsRef.current = ws
-
-    ws.onopen = () => {
-      console.log('🔌 Alerts page connected to live feed')
-      setWsConnected(true)
-    }
-
-    ws.onmessage = (event) => {
-      const message = JSON.parse(event.data)
-      if (message.type === 'live_reading') {
-        const reading = message.data as LiveReading
-        setLastUpdate(new Date())
-        
-        // Update alert nodes in real-time
-        setAlertNodes(prevNodes => {
-          return prevNodes.map(node => {
-            if (node.name === reading.nodeId) {
-              const status = getNodeStatus(reading.waterLevel, node.threshold)
-              return {
-                ...node,
-                latest_reading: {
-                  ...node.latest_reading,
-                  water_level: reading.waterLevel,
-                  timestamp: reading.timestamp
-                } as any,
-                status
+    // Poll for live data every 1 second for real-time updates
+    const pollInterval = setInterval(async () => {
+      try {
+        const response = await fetch('http://localhost:3001/api/esp32/live')
+        if (response.ok) {
+          const liveData: LiveData = await response.json()
+          setLiveConnected(true)
+          setLastUpdate(new Date())
+          
+          // Update alert nodes with live data
+          setAlertNodes(prevNodes => {
+            return prevNodes.map(node => {
+              const nodeData = liveData[node.name]
+              if (nodeData) {
+                const reading = nodeData.current
+                const status = getNodeStatus(reading.waterLevel, node.threshold)
+                return {
+                  ...node,
+                  latest_reading: {
+                    ...node.latest_reading,
+                    water_level: reading.waterLevel,
+                    timestamp: reading.timestamp
+                  } as any,
+                  status
+                }
               }
-            }
-            return node
-          }).filter(n => n.status === 'warning' || n.status === 'danger')
-        })
-        
-        // Also refresh to check if new nodes need to be added
-        fetchAlertNodes()
+              return node
+            }).filter(n => n.status === 'warning' || n.status === 'danger')
+          })
+          
+          // Also refresh to check if new nodes need to be added
+          fetchAlertNodes()
+        } else {
+          setLiveConnected(false)
+        }
+      } catch (error) {
+        console.error('Error polling live data:', error)
+        setLiveConnected(false)
       }
-    }
+    }, 1000) // Poll every 1 second
 
-    ws.onerror = () => setWsConnected(false)
-    ws.onclose = () => setWsConnected(false)
+    // Initial fetch
+    fetch('http://localhost:3001/api/esp32/live')
+      .then(res => res.json())
+      .then(() => setLiveConnected(true))
+      .catch(() => setLiveConnected(false))
 
     // Also listen for database updates
     const channel = supabase
@@ -73,7 +87,7 @@ export default function Alerts() {
       .subscribe()
 
     return () => {
-      ws.close()
+      clearInterval(pollInterval)
       supabase.removeChannel(channel)
     }
   }, [])
@@ -92,7 +106,6 @@ export default function Alerts() {
             .from('readings')
             .select('*')
             .eq('node_id', node.node_id)
-            .eq('confirmed_alert', true)  // Only confirmed alerts (5+ seconds)
             .order('timestamp', { ascending: false })
             .limit(1)
 
@@ -109,7 +122,7 @@ export default function Alerts() {
         })
       )
 
-      // Filter only nodes with confirmed warnings or danger alerts
+      // Filter only nodes with warnings or danger alerts (show immediately, not just confirmed)
       const filtered = nodesWithReadings.filter(
         (node) => node.latest_reading && (node.status === 'warning' || node.status === 'danger')
       )
@@ -140,22 +153,22 @@ export default function Alerts() {
         {/* Live Status */}
         <div className={cn(
           "px-4 py-2 rounded-lg border flex items-center gap-2",
-          wsConnected 
+          liveConnected 
             ? "bg-emerald-500/10 border-emerald-500/30" 
             : "bg-red-500/10 border-red-500/30"
         )}>
           <div className="relative">
-            <Radio className={cn("h-4 w-4", wsConnected ? "text-emerald-500" : "text-red-500")} />
-            {wsConnected && (
+            <Radio className={cn("h-4 w-4", liveConnected ? "text-emerald-500" : "text-red-500")} />
+            {liveConnected && (
               <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
             )}
           </div>
           <div>
             <span className={cn(
               "text-xs font-semibold",
-              wsConnected ? "text-emerald-600 dark:text-emerald-400" : "text-red-600 dark:text-red-400"
+              liveConnected ? "text-emerald-600 dark:text-emerald-400" : "text-red-600 dark:text-red-400"
             )}>
-              {wsConnected ? 'LIVE' : 'OFFLINE'}
+              {liveConnected ? 'REAL-TIME (1s)' : 'OFFLINE'}
             </span>
             <div className="flex items-center gap-1 text-[10px] text-muted-foreground">
               <Zap className="h-2.5 w-2.5" />

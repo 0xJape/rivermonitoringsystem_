@@ -28,12 +28,16 @@ const int simTX = 17;
 String phoneNumber = "+639624206885"; // CHANGE THIS
 
 // ------------------ ALERT SETTINGS ------------------
+const float WARNING_LEVEL = 1.0;  // Warning at 1.0m
+const float DANGER_LEVEL = 1.5;   // Danger at 1.5m
 float triggerDistance = 50.0; // Alert when water level rises (distance decreases)
 bool smsSent = false;
+bool warningSent = false;
+bool dangerSent = false;
 
 // ------------------ TIMING ------------------
 unsigned long lastServerUpdate = 0;
-const int serverInterval = 1000; // Send to server every 1 second for live feed
+const int serverInterval = 3000; // Send to server every 3 seconds for live feed
 
 long duration;
 float distance;
@@ -105,7 +109,7 @@ void loop() {
     Serial.println("WiFi disconnected!");
   }
   
-  delay(1000);
+  delay(1000); // Send every 1 second for real-time data
 }
 
 // ------------------ FUNCTIONS ------------------

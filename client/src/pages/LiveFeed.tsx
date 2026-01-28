@@ -1,253 +1,217 @@
-import { useEffect, useState, useRef } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { useState, useEffect } from 'react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Droplets, Wifi, WifiOff, MapPin, Activity } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { Activity, Droplets, TrendingUp } from 'lucide-react'
+import NodeChart from '@/components/dashboard/NodeChart'
 
 interface LiveReading {
   nodeId: string
   waterLevel: number
   timestamp: string
+  alertStatus: string
+  confirmedAlert: boolean
 }
 
 interface NodeData {
-  nodeId: string
-  latestReading: LiveReading
-  history: number[]
-  readingCount: number
-  lastSeen: Date
+  current: LiveReading
+  history: LiveReading[]
+  lastUpdate: string
+}
+
+interface LiveData {
+  [nodeId: string]: NodeData
 }
 
 export default function LiveFeed() {
-  const [nodes, setNodes] = useState<Map<string, NodeData>>(new Map())
-  const [connected, setConnected] = useState(false)
-  const [selectedNode, setSelectedNode] = useState<string | null>(null)
-  const wsRef = useRef<WebSocket | null>(null)
+  const [liveData, setLiveData] = useState<LiveData>({})
+  const [selectedNode, setSelectedNode] = useState<string>('')
+  const [isConnected, setIsConnected] = useState(false)
 
   useEffect(() => {
-    // Connect to WebSocket
-    const ws = new WebSocket('ws://localhost:3001')
-    wsRef.current = ws
-
-    ws.onopen = () => {
-      console.log('🔌 Connected to live feed')
-      setConnected(true)
-    }
-
-    ws.onmessage = (event) => {
-      const message = JSON.parse(event.data)
-      
-      if (message.type === 'live_reading') {
-        const newReading = message.data as LiveReading
-        
-        setNodes(prev => {
-          const updated = new Map(prev)
-          const existing = updated.get(newReading.nodeId)
+    // Poll the server every 1 second for real-time updates
+    const pollInterval = setInterval(async () => {
+      try {
+        const response = await fetch('http://localhost:3001/api/esp32/live')
+        if (response.ok) {
+          const data = await response.json()
+          setLiveData(data)
+          setIsConnected(true)
           
-          if (existing) {
-            // Update existing node
-            const newHistory = [...existing.history, newReading.waterLevel].slice(-30)
-            updated.set(newReading.nodeId, {
-              nodeId: newReading.nodeId,
-              latestReading: newReading,
-              history: newHistory,
-              readingCount: existing.readingCount + 1,
-              lastSeen: new Date()
-            })
-          } else {
-            // New node detected
-            updated.set(newReading.nodeId, {
-              nodeId: newReading.nodeId,
-              latestReading: newReading,
-              history: [newReading.waterLevel],
-              readingCount: 1,
-              lastSeen: new Date()
-            })
-            // Auto-select first node
-            if (!selectedNode) {
-              setSelectedNode(newReading.nodeId)
-            }
+          // Auto-select first node if none selected
+          if (!selectedNode && Object.keys(data).length > 0) {
+            setSelectedNode(Object.keys(data)[0])
           }
-          
-          return updated
-        })
+        } else {
+          setIsConnected(false)
+        }
+      } catch (error) {
+        console.error('Error fetching live data:', error)
+        setIsConnected(false)
       }
-    }
+    }, 1000) // Poll every 1 second
 
-    ws.onerror = (error) => {
-      console.error('WebSocket error:', error)
-      setConnected(false)
-    }
+    // Initial fetch
+    fetch('http://localhost:3001/api/esp32/live')
+      .then(res => res.json())
+      .then(data => {
+        setLiveData(data)
+        setIsConnected(true)
+        if (!selectedNode && Object.keys(data).length > 0) {
+          setSelectedNode(Object.keys(data)[0])
+        }
+      })
+      .catch(() => setIsConnected(false))
 
-    ws.onclose = () => {
-      console.log('WebSocket disconnected')
-      setConnected(false)
-    }
+    return () => clearInterval(pollInterval)
+  }, [selectedNode])
 
-    return () => {
-      ws.close()
-    }
-  }, [])
+  const nodeIds = Object.keys(liveData)
+  const currentNodeData = selectedNode ? liveData[selectedNode] : null
 
-  const getWaterLevelColor = (level: number) => {
-    if (level > 5) return 'text-red-600'
-    if (level > 3) return 'text-yellow-600'
-    return 'text-green-600'
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'danger': return 'bg-red-500'
+      case 'warning': return 'bg-yellow-500'
+      default: return 'bg-green-500'
+    }
   }
 
-  const nodeArray = Array.from(nodes.values())
-  const activeNode = selectedNode ? nodes.get(selectedNode) : nodeArray[0]
-  
-  const max = activeNode ? Math.max(...activeNode.history, 1) : 1
-  const min = activeNode ? Math.min(...activeNode.history, 0) : 0
-  const range = max - min || 1
+  const getStatusText = (status: string) => {
+    switch (status) {
+      case 'danger': return 'DANGER'
+      case 'warning': return 'WARNING'
+      default: return 'NORMAL'
+    }
+  }
 
   return (
-    <div className="p-6 space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-3xl font-bold">Live Sensor Feed</h1>
-          <p className="text-muted-foreground">Real-time water level monitoring from all nodes</p>
-        </div>
-        <Badge variant={connected ? 'success' : 'destructive'} className="gap-2">
-          {connected ? <Wifi className="h-4 w-4" /> : <WifiOff className="h-4 w-4" />}
-          {connected ? 'Connected' : 'Disconnected'}
-        </Badge>
-      </div>
+    <div className="space-y-6">
+      {/* Live Status Banner */}
+      <Card>
+        <CardHeader>
+          <div className="flex items-center justify-between">
+            <CardTitle className="flex items-center gap-2">
+              <Activity className="h-5 w-5" />
+              Live Feed Status
+            </CardTitle>
+            <Badge variant={isConnected ? 'default' : 'destructive'}>
+              {isConnected ? '🟢 Real-time (1s)' : '🔴 Disconnected'}
+            </Badge>
+          </div>
+        </CardHeader>
+      </Card>
 
       {/* Node Selector */}
-      {nodeArray.length > 0 && (
-        <div className="flex gap-2">
-          {nodeArray.map((node) => (
+      {nodeIds.length > 0 && (
+        <div className="flex gap-2 flex-wrap">
+          {nodeIds.map(nodeId => (
             <button
-              key={node.nodeId}
-              onClick={() => setSelectedNode(node.nodeId)}
-              className={cn(
-                "flex items-center gap-2 px-4 py-2 rounded-lg border-2 transition-all",
-                selectedNode === node.nodeId
-                  ? "border-primary bg-primary/10 font-semibold"
-                  : "border-border hover:border-primary/50"
-              )}
+              key={nodeId}
+              onClick={() => setSelectedNode(nodeId)}
+              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                selectedNode === nodeId
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
             >
-              <MapPin className="h-4 w-4" />
-              <span>{node.nodeId}</span>
-              <Badge variant="outline" className="ml-1">
-                {node.readingCount}
-              </Badge>
+              {nodeId}
             </button>
           ))}
         </div>
       )}
 
-      <div className="grid gap-4 md:grid-cols-2">
-        {/* Current Reading */}
-        <Card className="border-2">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Droplets className="h-5 w-5 text-blue-500" />
-              Current Water Level
-            </CardTitle>
-            <CardDescription className="flex items-center gap-2">
-              <MapPin className="h-3 w-3" />
-              {activeNode ? (
-                <span className="font-semibold text-primary">{activeNode.nodeId}</span>
-              ) : (
-                'Waiting for sensor data...'
-              )}
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            {activeNode ? (
-              <div className="space-y-4">
-                <div className={`text-6xl font-bold ${getWaterLevelColor(activeNode.latestReading.waterLevel)}`}>
-                  {activeNode.latestReading.waterLevel.toFixed(2)}
-                  <span className="text-2xl ml-2">m</span>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-sm text-muted-foreground flex items-center gap-2">
-                    <Activity className="h-3 w-3" />
-                    Last update: {new Date(activeNode.latestReading.timestamp).toLocaleTimeString()}
-                  </div>
-                  <div className="text-xs text-muted-foreground">
-                    Total readings: {activeNode.readingCount}
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="text-4xl font-bold text-muted-foreground">
-                Waiting for data...
-              </div>
-            )}
-          </CardContent>
-        </Card>
+      {/* Current Reading */}
+      {currentNodeData && (
+        <>
+          <div className="grid gap-4 md:grid-cols-3">
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">Current Water Level</CardTitle>
+                <Droplets className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">{currentNodeData.current.waterLevel.toFixed(2)} m</div>
+                <p className="text-xs text-muted-foreground">
+                  Last update: {new Date(currentNodeData.current.timestamp).toLocaleTimeString()}
+                </p>
+              </CardContent>
+            </Card>
 
-        {/* Mini Trend Chart */}
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">Alert Status</CardTitle>
+                <Activity className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2">
+                  <div className={`h-3 w-3 rounded-full ${getStatusColor(currentNodeData.current.alertStatus)}`} />
+                  <div className="text-2xl font-bold">{getStatusText(currentNodeData.current.alertStatus)}</div>
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  {currentNodeData.current.confirmedAlert ? 'Confirmed (5s+)' : 'Monitoring'}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">Recent Average</CardTitle>
+                <TrendingUp className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {(currentNodeData.history.reduce((sum, r) => sum + r.waterLevel, 0) / currentNodeData.history.length).toFixed(2)} m
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  {currentNodeData.history.length} readings | Max: {Math.max(...currentNodeData.history.map(r => r.waterLevel)).toFixed(2)} m
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Chart */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Water Level History (Last 10 Minutes)</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <NodeChart data={currentNodeData.history.slice(0, 20).reverse()} />
+            </CardContent>
+          </Card>
+
+          {/* Recent Readings Table */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Recent Readings</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {currentNodeData.history.slice(0, 10).map((reading, idx) => (
+                  <div key={idx} className="flex items-center justify-between p-2 border rounded">
+                    <span className="text-sm">{new Date(reading.timestamp).toLocaleTimeString()}</span>
+                    <span className="font-mono font-bold">{reading.waterLevel.toFixed(2)} m</span>
+                    <Badge variant={
+                      reading.alertStatus === 'danger' ? 'destructive' :
+                      reading.alertStatus === 'warning' ? 'default' : 'secondary'
+                    }>
+                      {reading.alertStatus.toUpperCase()}
+                    </Badge>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </>
+      )}
+
+      {/* No Data State */}
+      {nodeIds.length === 0 && (
         <Card>
-          <CardHeader>
-            <CardTitle>Trend (Last 30 seconds)</CardTitle>
-            <CardDescription>
-              {activeNode ? `${activeNode.nodeId} water level changes` : 'Water level changes over time'}
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="h-40 flex items-end gap-1">
-              {activeNode && activeNode.history.length > 0 ? (
-                activeNode.history.map((level, i) => {
-                  const height = ((level - min) / range) * 100
-                  return (
-                    <div
-                      key={i}
-                      className="flex-1 bg-blue-500 rounded-t transition-all duration-300"
-                      style={{ height: `${Math.max(height, 5)}%` }}
-                      title={`${level.toFixed(2)}m`}
-                    />
-                  )
-                })
-              ) : (
-                <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                  No data yet
-                </div>
-              )}
-            </div>
-            <div className="flex justify-between mt-2 text-xs text-muted-foreground">
-              <span>{min.toFixed(2)}m</span>
-              <span>{max.toFixed(2)}m</span>
-            </div>
+          <CardContent className="py-12 text-center">
+            <p className="text-muted-foreground">No live data available. Waiting for ESP32 readings...</p>
           </CardContent>
         </Card>
-      </div>
-
-      {/* Stats */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Session Statistics</CardTitle>
-          <CardDescription>
-            {activeNode ? `Data from ${activeNode.nodeId}` : 'Select a node to view statistics'}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {activeNode ? (
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div>
-                <div className="text-2xl font-bold">{activeNode.readingCount}</div>
-                <div className="text-sm text-muted-foreground">Readings</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold">{max.toFixed(2)}m</div>
-                <div className="text-sm text-muted-foreground">Max Level</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold">{min.toFixed(2)}m</div>
-                <div className="text-sm text-muted-foreground">Min Level</div>
-              </div>
-            </div>
-          ) : (
-            <div className="text-center text-muted-foreground py-4">
-              No data available
-            </div>
-          )}
-        </CardContent>
-      </Card>
+      )}
     </div>
   )
 }
