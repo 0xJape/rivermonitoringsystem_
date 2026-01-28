@@ -21,12 +21,12 @@ app.use('/api/readings', readingsRouter)
 app.use('/api/esp32', esp32Router)
 
 // Health check
-app.get('/health', (_req, res) => {
+app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() })
 })
 
 // Error handling
-app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error(err.stack)
   res.status(500).json({ error: 'Something went wrong!' })
 })

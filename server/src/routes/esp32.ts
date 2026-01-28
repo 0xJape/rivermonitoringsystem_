@@ -29,7 +29,7 @@ interface SensorReading {
   timestamp?: string
 }
 
-router.get('/reading', (_req, res) => {
+router.get('/reading', (req, res) => {
   res.json({ 
     message: 'ESP32 endpoint is working!',
     info: 'Use POST to send sensor data',
@@ -40,17 +40,16 @@ router.get('/reading', (_req, res) => {
   })
 })
 
-router.post('/reading', async (req, res): Promise<void> => {
+router.post('/reading', async (req, res) => {
   try {
     const reading: SensorReading = req.body
     
     console.log('📊 Live:', reading.nodeId, reading.waterLevel + 'm')
     
     if (!reading.nodeId || reading.waterLevel === undefined) {
-      res.status(400).json({ 
+      return res.status(400).json({ 
         error: 'Missing required fields: nodeId, waterLevel' 
       })
-      return
     }
 
     const timestamp = reading.timestamp || new Date().toISOString()
@@ -126,7 +125,7 @@ router.post('/reading', async (req, res): Promise<void> => {
   }
 })
 
-router.get('/latest/:nodeId', async (req, res): Promise<void> => {
+router.get('/latest/:nodeId', async (req, res) => {
   try {
     const { nodeId } = req.params
     
@@ -137,8 +136,7 @@ router.get('/latest/:nodeId', async (req, res): Promise<void> => {
       .single()
     
     if (!node) {
-      res.status(404).json({ error: 'Node not found' })
-      return
+      return res.status(404).json({ error: 'Node not found' })
     }
     
     const { data, error } = await supabase
@@ -150,8 +148,7 @@ router.get('/latest/:nodeId', async (req, res): Promise<void> => {
       .single()
     
     if (error || !data) {
-      res.status(404).json({ error: 'No recent data for this node' })
-      return
+      return res.status(404).json({ error: 'No recent data for this node' })
     }
     
     res.json(data)
@@ -161,7 +158,7 @@ router.get('/latest/:nodeId', async (req, res): Promise<void> => {
   }
 })
 
-async function persistToDatabase(reading: SensorReading, timestamp: string, confirmedAlert: boolean): Promise<void> {
+async function persistToDatabase(reading: SensorReading, timestamp: string, confirmedAlert: boolean) {
   let { data: node } = await supabase
     .from('nodes')
     .select('node_id')
