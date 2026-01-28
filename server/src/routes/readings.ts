@@ -80,7 +80,7 @@ router.post(
     body('flow_rate').isFloat({ min: 0 }),
     body('timestamp').optional().isISO8601(),
   ],
-  async (req, res) => {
+  async (req: any, res: any): Promise<void> => {
     const errors = validationResult(req)
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() })
@@ -151,7 +151,7 @@ router.delete('/:id', async (req, res) => {
 })
 
 // Get statistics for a time period
-router.get('/stats/:nodeId', async (req, res) => {
+router.get('/stats/:nodeId', async (req, res): Promise<void> => {
   try {
     const { startDate, endDate } = req.query
     
@@ -172,7 +172,8 @@ router.get('/stats/:nodeId', async (req, res) => {
     if (error) throw error
 
     if (!data || data.length === 0) {
-      return res.json({ message: 'No data available' })
+      res.json({ message: 'No data available' })
+      return
     }
 
     const stats = {

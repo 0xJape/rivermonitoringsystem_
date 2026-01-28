@@ -5,7 +5,7 @@ import { supabase } from '../config/supabase.js'
 const router = Router()
 
 // Get all nodes
-router.get('/', async (req, res) => {
+router.get('/', async (_req, res): Promise<void> => {
   try {
     const { data, error } = await supabase
       .from('nodes')
@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
 })
 
 // Get node by ID
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res): Promise<void> => {
   try {
     const { data, error } = await supabase
       .from('nodes')
@@ -31,7 +31,8 @@ router.get('/:id', async (req, res) => {
 
     if (error) throw error
     if (!data) {
-      return res.status(404).json({ error: 'Node not found' })
+      res.status(404).json({ error: 'Node not found' })
+      return
     }
 
     res.json(data)
@@ -132,7 +133,7 @@ router.delete('/:id', async (req, res) => {
 })
 
 // Get latest readings for all nodes
-router.get('/readings/latest', async (req, res) => {
+router.get('/readings/latest', async (_req, res): Promise<void> => {
   try {
     const { data: nodes, error: nodesError } = await supabase
       .from('nodes')
