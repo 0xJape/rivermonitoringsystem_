@@ -23,7 +23,8 @@ export default function Alerts() {
     fetchAlertNodes()
 
     // Connect to WebSocket for live updates
-    const ws = new WebSocket('ws://localhost:3001')
+    const wsUrl = import.meta.env.VITE_WS_URL || 'ws://localhost:3001'
+    const ws = new WebSocket(wsUrl)
     wsRef.current = ws
 
     ws.onopen = () => {
